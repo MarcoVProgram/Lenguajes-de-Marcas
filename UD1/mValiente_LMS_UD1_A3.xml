@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-7"?>
+
+<ejercicio numero="3">
+	<apartado numero="1" titulo="Plan de Viaje/Ruta turistica">
+		<destinos>
+			<destino numero="1" pais="Espana">
+				<nombre>Madrid</nombre>
+				<fechas>
+					<llegada>09:50</llegada>
+					<salida>11:20</salida>
+				</fechas>
+				<actividades>
+					<actividad numero="1" tipo="visita">
+						<lugar>Palacio Real</lugar>
+						<coste>3 euros</coste>
+						<hora>19:00</hora>
+					</actividad>
+					<actividad numero="2" tipo="comida">
+						<menu>Cocido</menu>
+						<coste>16 euros</coste>
+						<hora>14:00</hora>
+					</actividad>
+					<actividad numero="3" tipo="excursion">
+						<guia>Parque del Retiro</guia>
+						<coste>25 euros</coste>
+						<hora>17:30</hora>
+					</actividad>
+				</actividades>
+				<destacado>
+					<interes lugar="1">Puerta del Sol</interes>
+					<interes lugar="2">Paseo del Arte</interes>
+					<interes lugar="3">Fuente de Cibeles</interes>
+				</destacado>
+			</destino>
+			<destino numero="2" pais="Alemania">
+				<nombre>Berlin</nombre>
+				<fechas>
+					<llegada>10:20</llegada>
+					<salida>13:40</salida>
+				</fechas>
+				<actividades>
+					<actividad numero="1" tipo="visita">
+						<lugar>Reichstag</lugar>
+						<coste>36 euros</coste>
+						<hora>17:30</hora>
+					</actividad>
+					<actividad numero="2" tipo="comida">
+						<menu>Pretzel</menu>
+						<coste>11 euros</coste>
+						<hora>15:00</hora>
+					</actividad>
+					<actividad numero="3" tipo="excursion">
+						<guia>Isla Museo</guia>
+						<coste>15 euros</coste>
+						<hora>18:25</hora>
+					</actividad>
+				</actividades>
+				<destacado>
+					<interes lugar="1">Memorial Muro de Berlin</interes>
+					<interes lugar="2">Puerta de Brandeburgo</interes>
+					<interes lugar="3">Catedral de Berlin</interes>
+				</destacado>
+			</destino>
+			<destino numero="3" pais="Francia">
+				<nombre>Paris</nombre>
+				<fechas>
+					<llegada>09:30</llegada>
+					<salida>12:20</salida>
+				</fechas>
+				<actividades>
+					<actividad numero="1" tipo="visita">
+						<lugar>DisneyLand Paris</lugar>
+						<coste>45.60 euros</coste>
+						<hora>20:00</hora>
+					</actividad>
+					<actividad numero="2" tipo="comida">
+						<menu>Baguette</menu>
+						<coste>1 euros</coste>
+						<hora>13:20</hora>
+					</actividad>
+					<actividad numero="3" tipo="excursion">
+						<guia>Museo Louvre</guia>
+						<coste>13.50 euros</coste>
+						<hora>16:30</hora>
+					</actividad>
+				</actividades>
+				<destacado>
+					<interes lugar="1">Torre Eifel</interes>
+					<interes lugar="2">Arco del Triunfo</interes>
+					<interes lugar="3">Catedral de Notre Dame</interes>
+				</destacado>
+			</destino>
+			<destino numero="4" pais="Reino Unido">
+				<nombre>Londres</nombre>
+				<fechas>
+					<llegada>07:40</llegada>
+					<salida>9:50</salida>
+				</fechas>
+				<actividades>
+					<actividad numero="1" tipo="visita">
+						<lugar>Buckingham Palace</lugar>
+						<coste>12 euros</coste>
+						<hora>10:00</hora>
+					</actividad>
+					<actividad numero="2" tipo="comida">
+						<menu>Fish and Chips</menu>
+						<coste>11 euros</coste>
+						<hora>12:00</hora>
+					</actividad>
+					<actividad numero="3" tipo="excursion">
+						<guia>Tour de Harry Potter</guia>
+						<coste>39 euros</coste>
+						<hora>14:10</hora>
+					</actividad>
+				</actividades>
+				<destacado>
+					<interes lugar="1">Big Ben</interes>
+					<interes lugar="2">Abadia de Westminster</interes>
+					<interes lugar="3">British Museum</interes>
+				</destacado>
+			</destino>
+		</destinos>
+	</apartado>
+	<apartado numero="2" titulo="Coleccion de videojuegos retro">
+		<juegos>
+			<juego titulo="Mario Bros" lanzamiento="1960" genero="Accion">
+				<consola>
+					<nombre>Nintendo 3DS</nombre>
+					<autor>Nintendo</autor>
+				</consola>
+				<personajes>
+					<jugador numero="1">
+						<nombre color="Rojo">Mario</nombre>
+					</jugador>
+					<jugador numero="2">
+						<nombre color="Verde">Luigi</nombre>
+					</jugador>
+				</personajes>
+				<multijugador>Si</multijugador>
+			</juego>
+			<juego titulo="Street Fighters II" lanzamiento="1999" genero="Accion">
+				<consola>
+					<nombre>Atari 2600</nombre>
+					<autor>Atari</autor>
+				</consola>
+				<personajes>
+					<jugador numero="1">
+						<nombre color="Negro">John</nombre>
+					</jugador>
+					<jugador numero="2">
+						<nombre color="Azul">Sophie</nombre>
+					</jugador>
+				</personajes>
+				<multijugador>Si</multijugador>
+			</juego>
+			<juego titulo="Tetris" lanzamiento="1979" genero="Puzle">
+				<consola>
+					<nombre>Atari 2600</nombre>
+					<autor>Atari</autor>
+				</consola>
+				<personajes>
+					<jugador numero="1">
+						<nombre color="Rojo">bloque 1</nombre>
+					</jugador>
+					<jugador numero="2">
+						<nombre color="Verde">bloque 2</nombre>
+					</jugador>
+					<jugador numero="3">
+						<nombre color="Azul">bloque 3</nombre>
+					</jugador>
+					<jugador numero="2">
+						<nombre color="Amarillo">bloque 4</nombre>
+					</jugador>
+				</personajes>
+				<multijugador>No</multijugador>
+			</juego>
+			<juego titulo="Pacman" lanzamiento="2001" genero="Accion">
+				<consola>
+					<nombre>GameBoy</nombre>
+					<autor>Softbros</autor>
+				</consola>
+				<personajes>
+					<jugador numero="1">
+						<nombre color="Amarillo">Pacman</nombre>
+					</jugador>
+					<jugador numero="2">
+						<nombre color="Rosa">Pacwoman</nombre>
+					</jugador>
+				</personajes>
+				<multijugador>No</multijugador>
+			</juego>
+		</juegos>
+	</apartado>
+	<apartado numero="3" titulo="Estacion meteorologica">
+		<dia fecha="26/09/25">
+			<temperaturas  unidad="grados">
+				<minima>1</minima>
+				<maxima>16</maxima>
+			</temperaturas>
+			<condiciones>
+				<humedad dato="porcentaje">99</humedad>
+				<viento>
+					<fuerza direccion="norte">36400</fuerza>
+					<zona>madrid</zona>
+				</viento>
+			</condiciones>
+			<fenomenos dato="porcentaje">
+				<lluvia>99</lluvia>
+				<tormenta>50</tormenta>
+				<nieve>13</nieve>
+			</fenomenos>
+		</dia>
+		<dia fecha="27/03/25">
+			<temperaturas  unidad="grados">
+				<minima>30</minima>
+				<maxima>39</maxima>
+			</temperaturas>
+			<condiciones>
+				<humedad dato="porcentaje">3</humedad>
+				<viento>
+					<fuerza direccion="sur">2000</fuerza>
+					<zona>Cadiz</zona>
+				</viento>
+			</condiciones>
+			<fenomenos dato="porcentaje">
+				<lluvia>0</lluvia>
+				<tormenta>0</tormenta>
+				<nieve>0</nieve>
+			</fenomenos>
+		</dia>
+		<dia fecha="05/11/25">
+			<temperaturas  unidad="grados">
+				<minima>13</minima>
+				<maxima>20</maxima>
+			</temperaturas>
+			<condiciones>
+				<humedad dato="porcentaje">35</humedad>
+				<viento>
+					<fuerza direccion="noroeste">3650</fuerza>
+					<zona>Santander</zona>
+				</viento>
+			</condiciones>
+			<fenomenos dato="porcentaje">
+				<lluvia>36</lluvia>
+				<tormenta>11</tormenta>
+				<nieve>1</nieve>
+			</fenomenos>
+		</dia>
+		<dia fecha="09/09/25">
+			<temperaturas  unidad="grados">
+				<minima>12</minima>
+				<maxima>21</maxima>
+			</temperaturas>
+			<condiciones>
+				<humedad dato="porcentaje">66</humedad>
+				<viento>
+					<fuerza direccion="este">6500</fuerza>
+					<zona>Valladolid</zona>
+				</viento>
+			</condiciones>
+			<fenomenos dato="porcentaje">
+				<lluvia>65</lluvia>
+				<tormenta>60</tormenta>
+				<nieve>13</nieve>
+			</fenomenos>
+		</dia>
+		<dia fecha="12/12/24">
+			<temperaturas  unidad="grados">
+				<minima>-3</minima>
+				<maxima>0</maxima>
+			</temperaturas>
+			<condiciones>
+				<humedad dato="porcentaje">100</humedad>
+				<viento>
+					<fuerza direccion="oeste">9999</fuerza>
+					<zona>Cordillera Cantabrica</zona>
+				</viento>
+			</condiciones>
+			<fenomenos dato="porcentaje">
+				<lluvia>0</lluvia>
+				<tormenta>0</tormenta>
+				<nieve>100</nieve>
+			</fenomenos>
+		</dia>
+	</apartado>
+	<apartado numero="4" titulo="Animales en peligro de extincion">
+		<animales>
+			<animal entrada="1">
+				<nombres>
+					<comun>ajolote</comun>
+					<cientifico>axolotus maximus</cientifico>
+				</nombres>
+				<zona tipo="geografica">mexico</zona>
+				<peligro clasificacion="nivel">critico</peligro>
+				<caracteristicas tipo="fisicas">
+					<cabeza>anfibia</cabeza>
+					<cuerpo>acuatico</cuerpo>
+					<patas>fragiles</patas>
+				</caracteristicas>
+			</animal>
+			<animal entrada="2">
+				<nombres>
+					<comun>nautilus</comun>
+					<cientifico>nautilis prilisificus</cientifico>
+				</nombres>
+				<zona tipo="geografica">oceano atlantico</zona>
+				<peligro clasificacion="nivel">vulnerable</peligro>
+				<caracteristicas tipo="fisicas">
+					<cabeza>moluscular</cabeza>
+					<cuerpo>caparazon</cuerpo>
+					<patas>tentaculos</patas>
+				</caracteristicas>
+			</animal>
+			<animal entrada="3">
+				<nombres>
+					<comun>delfin</comun>
+					<cientifico>delfinus profuae</cientifico>
+				</nombres>
+				<zona tipo="geografica">mar asiatico</zona>
+				<peligro clasificacion="nivel">vulnerable</peligro>
+				<caracteristicas tipo="fisicas">
+					<cabeza>mamifera acuatica</cabeza>
+					<cuerpo>acuatico</cuerpo>
+					<patas>aletas</patas>
+				</caracteristicas>
+			</animal>
+			<animal entrada="4">
+				<nombres>
+					<comun>vaca tabunca</comun>
+					<cientifico>bobinus asturilos</cientifico>
+				</nombres>
+				<zona tipo="geografica">asturias y parte de cantabria</zona>
+				<peligro clasificacion="nivel">peligro</peligro>
+				<caracteristicas tipo="fisicas">
+					<cabeza>cuernos</cabeza>
+					<cuerpo>marron</cuerpo>
+					<patas>cuadrupeda y robusta</patas>
+				</caracteristicas>
+			</animal>
+		</animales>
+	</apartado>
+	<apartado numero="5" titulo="Sistema solar y planetas">
+		<planetas>
+			<planeta nombre="tierra" tipo="rocoso">
+				<datos>
+					<masa unidad="tierras">1</masa>
+					<diametro unidad="kilometros">13600</diametro>
+					<distancia al="sol" unidad="UA">1</distancia>
+				</datos>
+				<lunas>
+					<luna numero="1">Luna</luna>
+				</lunas>
+				<peligros tipo="cometas o asteroides" dato="porcentaje">13</peligros>
+			</planeta>
+			<planeta nombre="marte" tipo="rocoso">
+				<datos>
+					<masa unidad="tierras">0.7</masa>
+					<diametro unidad="kilometros">11200</diametro>
+					<distancia al="sol" unidad="UA">1.65</distancia>
+				</datos>
+				<lunas>
+					<luna numero="1">Phobos</luna>
+					<luna numero="2">Cebes</luna>
+				</lunas>
+				<peligros tipo="cometas o asteroides" dato="porcentaje">3</peligros>
+			</planeta>
+			<planeta nombre="jupiter" tipo="gaseoso">
+				<datos>
+					<masa unidad="tierras">360</masa>
+					<diametro unidad="kilometros">1563400</diametro>
+					<distancia al="sol" unidad="UA">3.5</distancia>
+				</datos>
+				<lunas>
+					<luna numero="1">Europa</luna>
+					<luna numero="2">Aristoteles</luna>
+					<luna numero="3">Plato</luna>
+					<luna numero="4">Nomen</luna>
+					<luna numero="5">Espari-06</luna>
+					<luna numero="6">Apolo</luna>
+					<luna numero="7">Aquimedes</luna>
+					<luna numero="8">Euclides</luna>
+					<luna numero="9">Icaro</luna>
+					<luna numero="10">Minos</luna>
+					<luna numero="11">Midas</luna>
+					<luna numero="12">Atenas</luna>
+					<luna numero="13">Espadas</luna>
+					<luna numero="14">Esparta</luna>
+				</lunas>
+				<peligros tipo="cometas o asteroides" dato="porcentaje">89</peligros>
+			</planeta>
+			<planeta nombre="saturno" tipo="gaseoso">
+				<datos>
+					<masa unidad="tierras">237</masa>
+					<diametro unidad="kilometros">996000</diametro>
+					<distancia al="sol" unidad="UA">4.9</distancia>
+				</datos>
+				<lunas>
+					<luna numero="1">Epos-36</luna>
+					<luna numero="2">Epos-65</luna>
+					<luna numero="3">Raticos</luna>
+					<luna numero="4">Lubili</luna>
+					<luna numero="5">Mocorlo</luna>
+					<luna numero="6">Ultronra</luna>
+					<luna numero="7">Flagia</luna>
+					<luna numero="8">Fregsteola</luna>
+				</lunas>
+				<peligros tipo="cometas o asteroides" dato="porcentaje"></peligros>
+			</planeta>
+			<planeta nombre="mercurio" tipo="rocoso">
+				<datos>
+					<masa unidad="tierras">0.6</masa>
+					<diametro unidad="kilometros">6000</diametro>
+					<distancia al="sol" unidad="UA">0.2</distancia>
+				</datos>
+				<lunas>
+					<luna numero="1">Zaplos</luna>
+				</lunas>
+				<peligros tipo="cometas o asteroides" dato="porcentaje">0.1</peligros>
+			</planeta>
+			<planeta nombre="venus" tipo="rocoso">
+				<datos>
+					<masa unidad="tierras">0.9</masa>
+					<diametro unidad="kilometros">12000</diametro>
+					<distancia al="sol" unidad="UA">0.5</distancia>
+				</datos>
+				<lunas>
+					<luna numero="1">Luminus</luna>
+					<luna numero="2">Brillus</luna>
+					<luna numero="3">Londres</luna>
+				</lunas>
+				<peligros tipo="cometas o asteroides" dato="porcentaje">19</peligros>
+			</planeta>
+			<planeta nombre="neptuno" tipo="gaseoso">
+				<datos>
+					<masa unidad="tierras">36</masa>
+					<diametro unidad="kilometros">136000</diametro>
+					<distancia al="sol" unidad="UA">9.5</distancia>
+				</datos>
+				<lunas>
+					<luna numero="1">Nocturn</luna>
+					<luna numero="2">Espesus</luna>
+					<luna numero="3">Aqyus</luna>
+					<luna numero="4">Poseidus</luna>
+				</lunas>
+				<peligros tipo="cometas o asteroides" dato="porcentaje">76</peligros>
+			</planeta>
+		</planetas>
+	</apartado>
+	<apartado numero="6" titulo="Festival de musica">
+		<dias>
+			<dia fecha="23/09">
+				<escenarios>
+					<escenario nombre="Mozard">
+						<actuacion>
+						<artista>Manu Fragua</artista>
+							<hora>13:30</hora>
+							<estilo>moderno</estilo>
+						</actuacion>
+						<canciones>
+							<opcion numero="1">Himno de la Alegria</opcion>
+							<opcion numero="2">Sinfonia clasica</opcion>
+						</canciones>
+					</escenario>
+					<escenario nombre="Betoven">
+						<actuacion>
+							<artista>Jose Luis Rodriguez</artista>
+							<hora>17:30</hora>
+							<estilo>clasica</estilo>
+						</actuacion>
+						<canciones>
+							<opcion numero="1">Sinfonia de betoven</opcion>
+							<opcion numero="2"></opcion>
+						</canciones>
+					</escenario>
+				</escenarios>
+			</dia>
+			<dia fecha="11/02">
+				<escenarios>
+					<escenario nombre="">
+						<actuacion>
+						<artista></artista>
+							<hora></hora>
+							<estilo></estilo>
+						</actuacion>
+						<canciones>
+							<opcion numero="1"></opcion>
+							<opcion numero="2"></opcion>
+						</canciones>
+					</escenario>
+					<escenario nombre="">
+						<actuacion>
+							<artista></artista>
+							<hora></hora>
+							<estilo></estilo>
+						</actuacion>
+						<canciones>
+							<opcion numero="1"></opcion>
+							<opcion numero="2"></opcion>
+						</canciones>
+					</escenario>
+				</escenarios>
+			</dia>
+		</dias>
+	</apartado>
+</ejercicio>

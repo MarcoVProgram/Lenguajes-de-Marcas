@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<ejercicio numero="1">
+	<!--Parte 1-->
+	<html parrafo="1" tema="tecnologia">
+		<introduccion>
+			<origen>
+				<creador>Tim Berners-Lee</creador>
+				<fecha>1991</fecha>
+			</origen>
+			<objetivo>compartir documentos cientificos</objetivo>
+		</introduccion>
+		<html5>
+			<contenido>mejor estructurado</contenido>
+			<incorporaciones>
+				<ejemplo numero="1">audio</ejemplo>
+				<ejemplo numero="2">video</ejemplo>
+				<ejemplo numero="3">graficos</ejemplo>
+			</incorporaciones>
+			<accesibilidad>facilitada</accesibilidad>
+		</html5>
+		<interacciones>
+			<css>presentacion visual</css>
+			<javascript>interaccion dinamica</javascript>
+		</interacciones>
+	</html>
+
+	<revolucion_francesa parrafo="2" tema="historia">
+		<introduccion>
+			<fecha>1789</fecha>
+			<relevancia>marca el inicio de una nueva era en Europa</relevancia>
+		</introduccion>
+		<causas>
+			<social>desigualdades sociales</social>
+			<economica>crisis economica</economica>
+			<intelectuales>influencia de ideas ilustradas</intelectuales>
+		</causas>
+		<acontecimientos>
+			<militar>toma de bastilla</militar>
+			<derecho>declaracion de derechos del hombre y el ciudadano</derecho>
+			<politico>proclamacion de la primera republica</politico>
+		</acontecimientos>
+		<consecuencias>
+			<extension>todo el continente</extension>
+			<transformacion>
+				<tipo numero="1">politica</tipo>
+				<tipo numero="2">social</tipo>
+			</transformacion>
+		</consecuencias>
+	</revolucion_francesa>
+
+	<baloncesto parrafo="3" tema="deporte">
+		<introduccion deporte="de equipo">
+			<origen>
+				<fecha>1891</fecha>
+				<creador>James Naismith</creador>
+				<lugar>Springfield, Massachusets</lugar>
+			</origen>
+		</introduccion>
+		<reglas>
+			<equipos>
+				<cantidad>2 equipos</cantidad>
+				<jugadores>5 cada uno</jugadores>
+			</equipos>
+			<objetivo>anotar puntos introduciendo el balon por el aro contrario</objetivo>
+		</reglas>
+		<competitivo>
+			<nba>en Estados Unidos</nba>
+			<juegos_olimpicos>desde 1936</juegos_olimpicos>
+		</competitivo>
+		<aficionados>
+			<cuantos>millones</cuantos>
+			<donde>mundo</donde>
+		</aficionados>
+	</baloncesto>
+
+	<nutricion parrafo="4" tema="ciencia y salud">
+		<introduccion proceso="biologico">
+			<objetivo>obtenciob de nutrientes necesarios</objetivo>
+		</introduccion>
+		<nutrientes>
+			<ejemplo numero="1">hidratos de carbono</ejemplo>
+			<ejemplo numero="2">proteinas</ejemplo>
+			<ejemplo numero="3">grasas</ejemplo>
+			<ejemplo numero="4">vitaminas</ejemplo>
+			<ejemplo numero="5">minerales</ejemplo>
+		</nutrientes>
+		<dieta_equilibrada>
+			<necesidad numero="1">alimentos variados</necesidad>
+			<necesidad numero="2">suficiente agua</necesidad>
+		</dieta_equilibrada>
+		<habitos>
+			<mala_alimentacion>
+				<problema numero="1">obesidad</problema>
+				<problema numero="2">diabetes</problema>
+				<problema numero="3">enfermedades cardiovasculares</problema>
+			</mala_alimentacion>
+			<buena_alimentacion>
+				<mejora numero="1">la salud</mejora>
+				<mejora numero="2">el bienestar general</mejora>
+			</buena_alimentacion>
+		</habitos>
+	</nutricion>
+
+	<peninsula_iberica parrafo="5" tema="geografia">
+		<partes>
+			<mayores>
+				<ejemplo numero="1">espana</ejemplo>
+				<ejemplo numero="2">portugal</ejemplo>
+			</mayores>
+			<menores>
+				<ejemplo numero="1">andorra</ejemplo>
+				<ejemplo numero="2">parte del sur de francia</ejemplo>
+				<ejemplo numero="3">gibraltar</ejemplo>
+			</menores>
+		</partes>
+		<limites tipo="geografico">
+			<norte>
+				<elemento numero="1">mar cantabrico</elemento>
+				<elemento numero="2">pirineos</elemento>
+			</norte>
+			<este>
+				<elemento numero="1">mar mediterraneo</elemento>
+			</este>
+			<oeste>
+				<elemento numero="1">oceano atlantico</elemento>
+			</oeste>
+			<sur>
+				<elemento numero="1">mar de alboran</elemento>
+				<elemento numero="2">estrecho de gibraltar</elemento>
+			</sur>
+		</limites>
+	</peninsula_iberica>
+
+	<renacimiento parrafo="6" tema="arte">
+		<introduccion movimiento="cultural">
+			<origen>
+				<fecha>siglo xvi</fecha>
+				<lugar>italia</lugar>
+			</origen>
+			<expansion>europa</expansion>
+		</introduccion>
+		<caracteristicas>
+			<centro>neopocentrismo</centro>
+			<busqueda>belleza ideal</busqueda>
+			<autoridad>grecolatina</autoridad>
+		</caracteristicas>
+		<artistas>
+			<migelangel>miguel angel</migelangel>
+			<davinci>leonardo da vinci</davinci>
+			<rafael>rafael</rafael>
+			<legado>
+				<pintura>pintura</pintura>
+				<escritura>escritura</escritura>
+				<arquitectura>arquitectura</arquitectura>
+			</legado>
+		</artistas>
+	</renacimiento>
+	
+	<cambio_climatico parrafo="7" tema="medioambiente">
+		<gravedad>mayores desafios globale actuales</gravedad>
+		<causas principal="emisiones de gases de efecto invernadero">
+			<derivadas numero="1">de la quema de combustibles fosiles</derivadas>
+			<derivadas numero="2">de la deforestacion</derivadas>
+			<derivadas numero="3">ciertas practicas agricolas</derivadas>
+		</causas>
+		<consecuencias>
+			<destacadas numero="1">aumento de temperaturas</destacadas>
+			<destacadas numero="2">deshielo de los polos</destacadas>
+			<destacadas numero="3">incremento del nivel del mar</destacadas>
+			<destacadas numero="4">fenomenos meteorologicos extremos</destacadas>
+		</consecuencias>
+		<contramedidas>
+			<ejemplo numero="1">energias renovables</ejemplo>
+			<ejemplo numero="2">la reforestacion</ejemplo>
+			<ejemplo numero="3">eficiencia energetica</ejemplo>		
+		</contramedidas>
+	</cambio_climatico>
+
+	<realismo parrafo="8" tema="literatura">
+		<introduccion movimiento="literario">
+			<origen>
+				<fecha>siglo xix</fecha>
+				<causa>reaccion al romanticismo</causa>
+			</origen>
+		</introduccion>
+		<obras>
+			<objetivo>representar la realidad de forma objetiva</objetivo>
+			<metodos como="atencion">
+				<ejemplo numero="1">detalles cotidianos</ejemplo>
+				<ejemplo numero="2">problemas sociales</ejemplo>
+			</metodos>
+		</obras>
+		<autores>
+			<autor numero="1" localizacion="espana">benito perez galdos</autor>
+			<autor numero="2" localizacion="francia">gustave flaubert</autor>
+			<autor numero="3" localizacion="inglaterra">charles dickens</autor>
+			<influencia posterior="naturalismo"></influencia>
+		</autores>
+	</realismo>
+	<juegos_olimpicos parrafo="9" tema="cultura general">
+		<introduccion>
+			<origen>
+				<lugar>atenas</lugar>
+				<fecha>1896</fecha>
+				<impulsador>pierre de coubertin</impulsador>
+			</origen>
+		</introduccion>
+		<celebracion>
+			<cuando>cada 4 años</cuando>
+			<atletas>todo el mundo</atletas>
+		</celebracion>
+		<disciplinas>
+			<generales>
+				<ejemplo numero="1">atletismo</ejemplo>
+				<ejemplo numero="2">natacion</ejemplo>
+				<ejemplo numero="3">gimnasio</ejemplo>
+				<ejemplo numero="4">baloncesto</ejemplo>
+				<ejemplo numero="5">futbol</ejemplo>
+			</generales>
+			<invierno>
+				<ejemplo numero="1">esqui</ejemplo>
+				<ejemplo numero="2">patinaje</ejemplo>
+				<ejemplo numero="3">hockey sobre hielo</ejemplo>
+			</invierno>
+		</disciplinas>
+	</juegos_olimpicos>
+
+	<globalizacion parrafo="10" tema="economia">
+		<introduccion tipo="proceso de interconexion de los mercados">
+			<nivel>mundial</nivel>
+		</introduccion>
+		<factores relevancia="principales">
+			<comercio>internacional</comercio>
+			<expansion>empresas multinacionales</expansion>
+			<advances>technologicos en communicaciones y transporte</advances>
+		</factores>
+		<effectos>
+			<ventajas>
+				<ejemplo numero="1">acceso a mas productos</ejemplo>
+				<ejemplo numero="2">crecimiento economico</ejemplo>
+				<ejemplo numero="3">difusion de la innovacion</ejemplo>
+			</ventajas>
+			<desventajas>
+				<ejemplo numero="1">deslocalizacion de empresas</ejemplo>
+				<ejemplo numero="2">perdida de empleo de ciertos sectores</ejemplo>
+				<ejemplo numero="3">aumento de desigualdades</ejemplo>
+			</desventajas>
+		</effectos>
+	</globalizacion>
+</ejercicio>

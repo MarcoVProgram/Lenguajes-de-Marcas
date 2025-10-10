@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-7"?>
+
+<curriculum>
+	<encabezado>
+		<nombre>Marco</nombre>
+		<profesion>Fisico Computacional</profesion>
+		<apellidos>
+			<apellido numero="1">Valiente</apellido>
+			<apellido numero="2">Rodriguez</apellido>
+		</apellidos>
+		<contacto>
+			<localizacion comunidad="Cantabria">Santander</localizacion>
+			<telefono tipo="personal" prefijo="+34">616 526 152</telefono>
+			<correo tipo="profesional">marco@micorreo.es</correo>
+		</contacto>
+	</encabezado>
+	<esquema>
+		<extracto>
+			<apertura estilo="atractiva">Muy buenas tardes a los interesados leyendo este curriculum</apertura>
+			<aplicacion al="puesto en la NASA de Espania">
+				<introduccion>Yo encajo en el perfil de programador de la NASA por</introduccion>
+				<motivos>
+					<motivo numero="1">Soy un gran progamador</motivo>
+					<motivo numero="2">Poseo conocimientos de fisica avanzados</motivo>
+					<motivo numero="3">Mi carrera esta desarrollada en relacion a ella</motivo>
+					<motivo numero="4">Soy trabajador y tengo experiencia en el ambito cientifico</motivo>
+					<motivo numero="5">Encajo en la busqueda del perfil en que buscais y en el puesto</motivo>
+				</motivos>
+				<espectativas>Espero poder trabajar y servir en el analisis de observacion de cuerpos celestes con desarrollo de aplicaciones en equipo</espectativas>
+			</aplicacion>
+		</extracto>
+		<idiomas>
+			<ingles escuela="EOI Santander">Nivel C1.2</ingles>
+			<espaniol escuela="Bachillerato">Nivel B2</espaniol>
+		</idiomas>
+		<educacion>
+			<estudios tipo="ESO">Superados con Nota Media 7</estudios>
+			<estudios tipo="Bachillerato" modalidad="Ciencias">Superados con Nota Media 8</estudios>
+			<universidad localizacion="Universidad de Cantabria">Grado en Fisica</universidad>
+			<formacion estilo="profesional" localizacion="Decroly">Grado en Desarrollo de Aplicaciones Web</formacion>
+		</educacion>
+		<redes tipo="sociales">
+			<twitter>@MarcoValientexProgram</twitter>
+			<instagram>@mvalientexPgr</instagram>
+			<github tipo="trabajo previo">MarcoXProgram</github>
+		</redes>
+		<experiencia estilo="laboral">
+			<practicas desde="Decroly">
+				<centro numero="1" anios="1">Empresa de programcion en Marismas</centro>
+				<centro numero="2" anios="1">Practicas en la Estacion Metereologia de Cantabria</centro>
+			</practicas>
+			<trabajo cuando="2019">
+				<centro numero="1" anios="2" siglas="IFCA">Instituto Fisica de Cantabria</centro>
+			</trabajo>
+		</experiencia>
+		<habilidades>
+			<conocimientos tipo="fisica">
+				<ejemplo numero="1">manejo de numeros complejos</ejemplo>
+				<ejemplo numero="2">conocimiento de fisica relativa y cuantica, asi como relacion, asi como de fisica nuclear</ejemplo>
+				<ejemplo numero="3">competencias de mecanica y electromagnetismo</ejemplo>
+				<ejemplo numero="4">conocimientos de aplicaciones de ondas</ejemplo>
+			</conocimientos>
+			<conocimientos tipo="desarrollo de apps web">
+				<ejemplo numero="1">manejo de repositorios y trabajo en equip</ejemplo>
+				<ejemplo numero="2">conocimiento del uso de las instalaciones del CERN y de la Estacion Meteorologica de Catabria, asi como sus formatos</ejemplo>
+				<ejemplo numero="3">uso del telescopio del IFCA</ejemplo>
+				<ejemplo numero="4">conocimientos de Java, Javascript, Python, LaTeX y HTML/CSS, competencias de trabajar en multiarchivos</ejemplo>
+				<ejemplo numero="5">capacidad de elaboracion de bases de datos</ejemplo>
+				<ejemplo numero="6">competencias en prevencion de riesgos</ejemplo>
+				<ejemplo numero="7">entendimiento de los sistemas informaticos</ejemplo>
+			</conocimientos>
+		</habilidades>
+	</esquema>
+</curriculum>
