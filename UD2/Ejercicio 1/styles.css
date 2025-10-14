@@ -19,7 +19,7 @@ h1 {
 .product img {
 	display: block;
   	margin: auto;
-  	width: 25%;
+  	width: auto;
   	height: auto;
 }
 

@@ -1,0 +1,113 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #ffffff;
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img1 img2 img3 img4 img5"
+    "img1 img2 img3 img4 img5"
+    "txt1 txt2 txt3 txt4 txt5";
+  margin: auto;
+  width: 30%;
+  height: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  display: auto;
+  align-items: center;
+}
+
+.img1 { 
+  grid-area: img1;
+  width: 50%;
+  height: 0%;
+  scale: 100%;
+}
+
+.img2 {
+  grid-area: img2; 
+  width: 50%;
+  height: 0%;
+  scale: 100%;
+}
+
+.img3 {
+  grid-area: img3;
+  width: 50%;
+  height: 0%;
+  scale: 100%;
+}
+
+.img4 {
+  grid-area: img4;
+  width: 50%;
+  height: 0%;
+  scale: 100%;
+}
+
+.img5 {
+  grid-area: img5;
+  width: 50%;
+  height: 0%;
+  scale: 100%;
+}
+
+.txt1 {
+  grid-area: txt1;
+  display: inline-table;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 3px;
+  text-align: left;
+  max-width: 130px;
+  height: 100%;
+}
+
+.txt2 {
+  grid-area: txt2;
+  display: inline-table;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 3px;
+  text-align: left;
+  max-width: 130px;
+  height: 100%;
+}
+
+.txt3 {
+  grid-area: txt3;
+  display: inline-table;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 3px;
+  text-align: left;
+  max-width: 130px;
+  height: 100%;
+}
+
+.txt4 {
+  grid-area: txt4;
+  display: inline-table;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 3px;
+  text-align: left;
+  max-width: 130px;
+  height: 100%;
+}
+
+.txt5 {
+  grid-area: txt5;
+  display: inline-table;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 3px;
+  text-align: left;
+  max-width: 130px;
+  height: 100%;
+  color: #737373;
+}
