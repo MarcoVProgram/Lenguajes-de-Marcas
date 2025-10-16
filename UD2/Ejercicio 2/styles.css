@@ -17,97 +17,122 @@ body {
   height: 50%;
   max-width: 100%;
   max-height: 100%;
-  display: auto;
   align-items: center;
 }
 
 .img1 { 
   grid-area: img1;
-  width: 50%;
-  height: 0%;
+  width: fit-content;
+  height: 15%;
   scale: 100%;
 }
 
 .img2 {
   grid-area: img2; 
-  width: 50%;
-  height: 0%;
+  width: fit-content;
+  height: 10%;
   scale: 100%;
 }
 
 .img3 {
   grid-area: img3;
-  width: 50%;
-  height: 0%;
+  width: fit-content;
+  height: 10%;
   scale: 100%;
 }
 
 .img4 {
   grid-area: img4;
-  width: 50%;
-  height: 0%;
+  width: fit-content;
+  height: 10%;
   scale: 100%;
 }
 
 .img5 {
   grid-area: img5;
-  width: 50%;
-  height: 0%;
+  width: fit-content;
+  height: 10%;
   scale: 100%;
 }
 
 .txt1 {
-  grid-area: txt1;
-  display: inline-table;
-  font-size: 11px;
-  line-height: 1.6;
-  margin: 3px;
+  display: flex;
+  font-size: 7.5px;
+  line-height: 1.4;
+  margin: 10%;
   text-align: left;
   max-width: 130px;
   height: 100%;
+  color: #6e6e6e;
+  height: 65%;
+  width: fit-content;
+  margin-right: 33px;
+  margin-left: 12px;
+  font-weight: bold;
 }
 
 .txt2 {
   grid-area: txt2;
-  display: inline-table;
-  font-size: 11px;
-  line-height: 1.6;
+  display: flex;
+  font-size: 7.5px;
+  line-height: 1.4;
   margin: 3px;
   text-align: left;
   max-width: 130px;
   height: 100%;
+  color: #6e6e6e;
+  height: 65%;
+  width: fit-content;
+  margin-right: 33px;
+  margin-left: 12px;
+  font-weight: bold;
 }
 
 .txt3 {
   grid-area: txt3;
-  display: inline-table;
-  font-size: 11px;
-  line-height: 1.6;
-  margin: 3px;
+  display: flex;
+  font-size: 7.5px;
+  line-height: 1.4;
+  margin: 0px;
   text-align: left;
   max-width: 130px;
-  height: 100%;
+  color: #6e6e6e;
+  height: 65%;
+  width: fit-content;
+  margin-right: 33px;
+  margin-left: 12px;
+  font-weight: bold;
 }
 
 .txt4 {
   grid-area: txt4;
-  display: inline-table;
-  font-size: 11px;
-  line-height: 1.6;
+  display: flex;
+  font-size: 7.5px;
+  line-height: 1.4;
   margin: 3px;
   text-align: left;
   max-width: 130px;
-  height: 100%;
+  color: #6e6e6e;
+  height: 65%;
+  width: fit-content;
+  margin-right: 33px;
+  margin-left: 13px;
+  font-weight: bold;
 }
 
 .txt5 {
   grid-area: txt5;
-  display: inline-table;
-  font-size: 11px;
-  line-height: 1.6;
+  display: flex;
+  font-size: 7.5px;
+  line-height: 1.4;
   margin: 3px;
   text-align: left;
   max-width: 130px;
   height: 100%;
-  color: #737373;
+  color: #6e6e6e;
+  height: 65%;
+  width: fit-content;
+  margin-right: 33px;
+  margin-left: 12px;
+  font-weight: bold;
 }
