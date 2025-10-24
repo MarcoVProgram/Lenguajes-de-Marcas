@@ -1,0 +1,131 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #e7f6ffa8;
+}
+
+table.menuTable {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
+  border: 0px transparent #244294;
+  background-color: #d1d9ee;
+  width: 60%;
+  height: 25em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12.5%;
+  margin-bottom: auto;
+}
+table.menuTable td, table.menuTable th {
+  border: 1px solid #18657c;
+  padding: 5px 3px;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+table.menuTable td.entrante {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #251e1e;
+  background: -moz-linear-gradient(top, #e9f1ff 0%, #e0efff 66%, #d4e0fa 100%);
+  background: -webkit-linear-gradient(top, #e9f1ff 0%, #e0efff 66%, #d4e0fa 100%);
+  background: linear-gradient(to bottom, #e9f1ff 0%, #e0efff 66%, #d4e0fa 100%);
+  border: 0px;
+}
+table.menuTable td.principal {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #251e1e;
+  background: -moz-linear-gradient(top, #d4e0fa 0%, #ceddfc 66%, rgb(178, 194, 233) 100%);
+  background: -webkit-linear-gradient(top, #d4e0fa 0%, #ceddfc 66%, rgb(178, 194, 233) 100%);
+  background: linear-gradient(to bottom, #d4e0fa 0%, #ceddfc 66%, rgb(178, 194, 233) 100%);
+  border: 0px;
+}
+table.menuTable td.postre {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #251e1e;
+  background: -moz-linear-gradient(top, rgb(178, 194, 233) 0%, rgb(188, 206, 253) 66%, rgb(158, 174, 219) 100%);
+  background: -webkit-linear-gradient(top, rgb(178, 194, 233) 0%, rgb(188, 206, 253) 66%, rgb(158, 174, 219) 100%);
+  background: linear-gradient(to bottom, rgb(178, 194, 233) 0%, rgb(188, 206, 253) 66%, rgb(158, 174, 219) 100%);
+  border: 0px;
+}
+table.menuTable td.horario {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background: -moz-linear-gradient(top, #9bb4e0 0%, #91bae7 66%, #81a3ec 100%);
+  background: -webkit-linear-gradient(top, #9bb4e0 0%, #91bae7 66%, #81a3ec 100%);
+  background: linear-gradient(to bottom, #9bb4e0 0%, #91bae7 66%, #81a3ec 100%);
+  border: 0px;
+}
+table.menuTable td.precio {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background: -moz-linear-gradient(top, #81a3ec 0%, #93bfee 66%, #7297e7 100%);
+  background: -webkit-linear-gradient(top, #81a3ec 0%, #93bfee 66%, #7297e7 100%);
+  background: linear-gradient(to bottom, #81a3ec 0%, #93bfee 66%, #7297e7 100%);
+  border: 0px;
+}
+
+table.menuTable td.description {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border: #d1d9ee;
+  background-color: #2db8bd;
+  background: -moz-linear-gradient(top, #647dac 0%, #436ea0 66%, #2c4e97 100%);
+  background: -webkit-linear-gradient(top, #647dac 0%, #436ea0 66%, #2c4e97 100%);
+  background: linear-gradient(to bottom, #647dac 0%, #436ea0 66%, #2c4e97 100%);
+  border-bottom: 0px solid #444444;
+}
+table.menuTable tbody td {
+  font-size: 13px;
+}
+
+table.menuTable thead {
+  background: #244294;
+  background: -moz-linear-gradient(top, #5b6faf 0%, #3a5a9e 66%, #244b94 100%);
+  background: -webkit-linear-gradient(top, #5b6faf 0%, #3a5a9e 66%, #244b94 100%);
+  background: linear-gradient(to bottom, #5b6faf 0%, #3a5a9e 66%, #244b94 100%);
+  border-bottom: 0px solid #444444;
+}
+table.menuTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: left;
+  border-left: 2px solid #244294;
+}
+table.menuTable thead th:first-child {
+  border-left: none;
+}
+
+table.menuTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #F0F0F0;
+  background: #244294;
+  background: -moz-linear-gradient(top, #5b6faf 0%, #3a5a9e 66%, #244b94 100%);
+  background: -webkit-linear-gradient(top, #5b6faf 0%, #3a5a9e 66%, #244b94 100%);
+  background: linear-gradient(to bottom, #5b6faf 0%, #3a5a9e 66%, #244b94 100%);
+  border-top: 1px solid #244294;
+}
+table.menuTable tfoot td {
+  font-size: 13px;
+}
+table.menuTable tfoot .links {
+  text-align: right;
+}
+table.menuTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #244294;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
