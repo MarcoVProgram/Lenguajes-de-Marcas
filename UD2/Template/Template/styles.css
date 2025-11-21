@@ -1,0 +1,149 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #f4f4f4;
+}
+
+.header {
+	background-color: #c62828;
+	color: white;
+	padding: 20px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.images {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px;
+	gap: 20px;
+}
+
+.image-box {
+	background-color: white;
+	padding: 10px;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	width: 120px;
+}
+
+.image-box img {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto 5px auto;
+	border-radius: 6px;
+}
+
+.action-boxes {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin: 20px;
+}
+
+.action {
+	border-radius: 15px;
+	padding: 20px;
+	width: 150px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.action:first-child {
+	background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+	border: 2px solid #3f2b96;
+}
+
+.action:last-child {
+	background: linear-gradient(135deg, #fceabb, #f8b500);
+	border: 2px solid #f8b500;
+}
+
+.action img {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto 10px auto;
+	border-radius: 10px;
+}
+
+button {
+	padding: 6px 12px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	color: white;
+	margin: 5px;
+	font-weight: bold;
+}
+
+button.accept {
+	background-color: #2e7d32;
+}
+
+button.cancel {
+	background-color: #c62828;
+}
+
+button.accept:hover {
+	background-color: #388e3c;
+}
+
+button.cancel:hover {
+	background-color: #d32f2f;
+}
+
+.tables {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px;
+	padding: 0 60px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 250px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	font-size: 18px;
+}
+
+td {
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+th:first-child, td:first-child {
+	color: #333;
+	font-weight: bold;
+}
+
+th:last-child, td:last-child {
+	color: #2e7d32;
+}
+
+.footer {
+	background-color: #424242;
+	color: white;
+	padding: 15px;
+	font-size: 16px;
+	margin-top: 40px;
+}

@@ -1,0 +1,97 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+.header {
+	background: #2B5788;
+	background: linear-gradient(135deg, rgba(43, 87, 136, 1) 0%, rgba(13, 26, 43, 1) 31%, rgba(43, 87, 136, 1) 69%, rgba(201, 218, 234, 1) 100%);
+	color: white;
+	padding: 20px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.introductions {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 150px;
+	gap: 20px;
+}
+
+.introduccion-basico {
+	width: 250px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.introduccion-media {
+	width: 250px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.introduccion-alta {
+	width: 250px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.tablas {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px;
+	padding: 0 60px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 250px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+th {
+	background: #2B5788;
+	color: #C9DAEA;
+	padding: 10px;
+	font-size: 18px;
+}
+
+th.titulo {
+	font-size: 30px;
+	background: #0D1A2B;
+}
+
+td {
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+td:first-child {
+	color: #333;
+	font-weight: bold;
+}
+
+td:last-child {
+	color: #2e7d32;
+	font-weight: bold;
+}
+
+.footer {
+	background: #C9DAEA;
+	background: linear-gradient(135deg, rgba(201, 218, 234, 1) 0%, rgba(43, 87, 136, 1) 31%, rgba(13, 26, 43, 1) 69%, rgba(43, 87, 136, 1) 100%);
+	color: white;
+	padding: 15px;
+	font-size: 16px;
+	margin-top: 40px;
+}
