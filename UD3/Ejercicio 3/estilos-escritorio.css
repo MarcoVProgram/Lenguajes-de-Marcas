@@ -1,0 +1,281 @@
+/* styles.css */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #002868;
+    color: #ffffff;
+    padding: 1rem;
+}
+/* estilos imágenes*/
+.heroe img {
+    max-width: 1400px;
+    max-height: 1050px;
+}
+
+.diseno-grid img {
+    max-width: 500px;
+    max-height: 300px; 
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Menú desplegable */
+.desplegable {
+    position: relative;
+}
+
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.desplegable:hover .menu-desplegable {
+    display: block;
+}
+
+/* Sección de bienvenida */
+.heroe {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+/* Diseño en cuadrícula */
+.diseno-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #e2e2e2;
+}
+
+.item-grid {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Tabla */
+.tabla-noticias {
+    padding: 2rem;
+    background: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+/* Galería */
+.libros {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contenedor-libros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contenedor-libros img {
+    width: calc(25% - 1rem);
+    border: 1px solid #ccc;
+}
+
+/* Pie de página */
+footer {
+    background-color: #002868;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Diseño de Media */
+
+@media (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: lightgray; /* Cambia el fondo para dispositivos pequeños */
+    }
+    img {
+        max-width: 100%; /* Las imágenes ocupan todo el ancho disponible, pero pueden hacerse mas pequeñas si lo necesitan */
+        height: auto; /* Mantienen su proporción */
+    }
+
+    /* Reescribe el Header */
+
+    header {
+        background-color: #002868;
+        color: #ffffff;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    /* Partes del header */
+
+    .diseno-grid img {
+        max-width: 100%;
+        max-height: auto; 
+    }
+
+    .contenedor-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        flex-direction: column; /* Se organiza verticalmente */
+    }
+
+    header h1 {
+        font-size: vw; /* La font se hace responsiva */
+    }
+
+    /* Los mismos cambios siguen a la imagen heroe */
+    .heroe img {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    .menu {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        display: none; /* Se borra */
+        /*gap: 1rem;*/
+        flex-direction: column; /* Un cambio a formato vertical */
+        align-items: center; /* Se alinea todo al centro */
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Sección de bienvenida de Movil */
+    .heroe {
+        text-align: center;
+        /*padding: 10%;*/
+        padding-left: 10%; /* Diseñamos el padding para cada lado */
+        padding-right: 10%; /* Diseñamos el padding para cada lado */
+        background-color: #ffffff;
+        align-items: center;
+    }
+
+    /* Diseño en cuadrícula */
+    .diseno-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Se cambian todas las imagenes a estar en columnas */
+        gap: 2%;
+        padding: 0%; /* Se les da espacio propio */
+        padding-top: 5%; /* Separamos el heroe de las imagenes siguientes */
+        padding-bottom: 10%; /* Damos mas espacio al final de la tabla */
+        background-color: #e2e2e2;
+    }
+
+    .item-grid {
+        background: white;
+        padding: 10%;
+        border: 1% solid #ccc;
+        text-align: center;
+    }
+
+    /* Tabla */
+    .tabla-noticias {
+        padding: 10%; /* Se decribe el padding como porcentaje */
+        background: #ffffff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 3vw; /* La fuente se ajusta a la pantalla */
+        align-items: center;
+        text-align: center;
+        /* Se centra */
+    }
+
+    table th, table td {
+        border: 1px solid #ccc;
+        padding: 2.5%; /* Responsivo en porcentaje */
+    }
+
+    /* Galería */
+    .libros {
+        padding: 10%; /* Responsivo en porcentaje */
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .contenedor-libros {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+        justify-content: center;
+        /*flex-direction: column; /* Le damos direccion a columnas */
+    }
+
+    .contenedor-libros img {
+        width: calc(90%);
+        grid-template-columns: repeat(1, 2fr);
+        border: 0px solid #ccc;
+        padding-bottom: 5%; /* Se borra el borde, se reordenan las imagenes */
+    }
+
+    /* Pie de página */
+    footer {
+        background-color: #002868;
+        color: #ffffff;
+        text-align: center;
+        padding: 5% 0; /* Se vuelve porcentaje */
+    }
+}
