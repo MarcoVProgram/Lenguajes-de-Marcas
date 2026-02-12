@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* gris oscuro */
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    color: white;
+}
+
+.container {  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5% 65% 5% 30%;
+  grid-auto-columns: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "t1 t1"
+    "tl tr"
+    "t2 t2"
+    "b b";
+  align-items: center;
+}
+
+.tl { grid-area: tl;
+display: block;
+  justify-content: center;
+  margin: 0 auto 5px auto;
+  border-radius: 6px;
+}
+
+.tr { grid-area: tr;
+display: block;
+  justify-content: center;
+  margin: 0 auto 5px auto;
+  border-radius: 6px;
+}
+
+.t2 {
+  grid-area: t2;
+  background-color: darkred;
+  color: white;
+  padding: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.t1 {
+  grid-area: t1;
+  background-color: darkred;
+  color: white;
+  padding: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.b {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "b1 b2 b3"
+    "b1 b2 b3"
+    "b1 b2 b3";
+  grid-area: b;
+}
+
+.b1 { grid-area: b1;
+  display: block;
+  justify-content: center;
+  margin: 0 auto 5px auto;
+  border-radius: 6px;
+}
+
+.b2 { grid-area: b2;
+  display: block;
+  justify-content: center;
+  margin: 0 auto 5px auto;
+  border-radius: 6px;
+}
+
+.b3 { grid-area: b3;
+  display: block;
+  justify-content: center;
+  margin: 0 auto 5px auto;
+  border-radius: 6px;
+}

@@ -1,0 +1,62 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background-color: #f3f4f6;
+	color: #333;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	color: #007BFF;
+}
+
+button {
+	background-color: #007BFF;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 5px;
+
+
+  /* Ocupa un tercio de ancho menos el espacio */
+
+  flex: 1 0 calc(30% - 20px); /* flex-grow, flex-shrink, flex-basis */
+
+  /* Alternativa más simple si no hay gaps */
+
+  /* flex-basis: 33.333%; */
+
+  /* width: 33%; */
+
+  box-sizing: border-box; /* Incluye padding y border en el ancho */
+
+  padding: 20px;
+
+  text-align: center;
+}
+
+.botones {
+
+  display: flex; /* Habilita Flexbox */
+
+  flex-wrap: wrap; /* Permite que los elementos salten de línea */
+
+  justify-content: space-between; /* Distribuye espacio entre los elementos */
+
+  gap: 20px; /* Espacio entre elementos (opcional) */
+
+}
+
+
+button:hover {
+background-color: #0056b3;
+}
+
+#mensaje {
+	margin-top: 20px;
+	font-size: 18px;
+}
