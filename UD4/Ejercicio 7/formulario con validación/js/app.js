@@ -51,13 +51,12 @@ function leerTexto(input) {
 
 //Funcion Validacion
 function validarNombre() {
-    console.log("Se esta validando el nombre");
 
     const n = leerTexto(nombre);
     const patron = /^[a-z][a-z\s]{1,29}$/i;
     
     if(!n.match(patron)) {
-        mostrarError(errorNombre, "El nombre está mal introducido. Revisalo de nuevo.");
+        mostrarError(errorNombre, "El nombre está mal introducido. Revísalo de nuevo.");
         return false;
     }
     
@@ -66,10 +65,10 @@ function validarNombre() {
 };
 
 function validarApellidos() {
-    console.log("Se están validando los Apellidos");
+
     const a = leerTexto(apellidos);
     if (a.length < 2 || a.length > 60){
-        mostrarError(errorApellidos, "El apellido está mal introducido. Revisalo de nuevo.");
+        mostrarError(errorApellidos, "El apellido está mal introducido. Revísalo de nuevo.");
         return false;
     }
 
@@ -79,13 +78,12 @@ function validarApellidos() {
 };
 
 function validarEmail() {
-    console.log("Se esta validando el email");
 
     const e = leerTexto(email);
-    const patron = /^[a-z]@{1}.{1}[a-z]$/i;
+    const patron = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
-    if(e.match(patron)) {
-        mostrarError(errorEmail, "El email está mal introducido. Revisalo de nuevo.");
+    if(!e.match(patron)) {
+        mostrarError(errorEmail, "El email está mal introducido. Revísalo de nuevo.");
         return false;
     }
     
@@ -95,10 +93,30 @@ function validarEmail() {
 
 function validarTelefono() {
 
+    const t = leerTexto(telefono);
+    const patron = /^[0-9]{9}$/;
+
+    if (!t.match(patron)) {
+        mostrarError(errorTelefono, "El telefono está mal introducido. Revísalo de nuevo.");
+        return false;
+    }
+
+    limpiarError(errorTelefono);
+    return true;
 };
 
 function validarFecha() {
+    
+    const f = leerTexto(fechaNacimiento);
+    const fecha = new Date(f);
 
+    if (fecha - new Date() < 568024668000) {
+        mostrarError(errorFecha, "La fecha no es válida. Debes ser mayor de Edad.");
+        return false;
+    }
+
+    limpiarError(errorFecha);
+    return true;
 };
 
 function validarProvincia() {
