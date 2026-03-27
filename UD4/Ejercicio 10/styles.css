@@ -1,0 +1,341 @@
+:root {
+    --bg: #0f172a;
+    --bg-soft: #111827;
+    --surface: rgba(255, 255, 255, 0.08);
+    --surface-strong: rgba(255, 255, 255, 0.12);
+    --line: rgba(255, 255, 255, 0.1);
+    --text: #e5eefc;
+    --muted: #9fb0d0;
+    --accent: #60a5fa;
+    --accent-2: #22c55e;
+    --danger: #f59e0b;
+    --shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+    --radius-xl: 24px;
+    --radius-lg: 18px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(96, 165, 250, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(34, 197, 94, 0.12), transparent 22%),
+        linear-gradient(160deg, #020617 0%, #0f172a 48%, #111827 100%);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.app-shell {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 28px;
+    border-right: 1px solid var(--line);
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(18px);
+}
+
+.brand,
+.section-heading,
+.hero,
+.hero-stats,
+.stat-box,
+.sidebar-nav,
+.field,
+.book-card,
+.ids-panel ul {
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+}
+
+.brand {
+    align-items: center;
+    gap: 1%;
+    margin-bottom: 5%;
+}
+
+.brand-mark {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--accent), #2563eb);
+    box-shadow: var(--shadow);
+    font-size: 1.6rem;
+}
+
+.eyebrow {
+    color: var(--muted);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.brand h1,
+.section-heading h2,
+.hero h2,
+.book-card h3 {
+    line-height: 1.1;
+}
+
+.brand h1 {
+    font-size: 1.2rem;
+}
+
+.sidebar-nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text);
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    border-color: rgba(96, 165, 250, 0.35);
+    background: rgba(96, 165, 250, 0.12);
+    outline: none;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+}
+
+.ids-panel {
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 62ch;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+.hero-stats {
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    flex-direction: column;
+    gap: 6px;
+    min-width: 140px;
+    padding: 18px;
+    border-radius: var(--radius-lg);
+    background: var(--surface-strong);
+    border: 1px solid var(--line);
+}
+
+.stat-label,
+.book-card p,
+.book-card small,
+.status-box {
+    color: var(--muted);
+}
+
+.section-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.section-card {
+    padding: 28px;
+}
+
+.section-heading {
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 22px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.field {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text);
+    font: inherit;
+}
+
+input,
+select {
+    padding: 14px 16px;
+}
+
+input::placeholder {
+    color: #7f92b6;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: 2px solid rgba(96, 165, 250, 0.35);
+    outline-offset: 2px;
+}
+
+.action-field {
+    justify-content: end;
+    align-self: end;
+}
+
+button {
+    cursor: pointer;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, var(--accent), #2563eb);
+    font-weight: 700;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.book-card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--line);
+}
+
+.badge {
+    width: fit-content;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    background: rgba(34, 197, 94, 0.16);
+    color: #bbf7d0;
+}
+
+.badge.muted {
+    background: rgba(245, 158, 11, 0.14);
+    color: #fde68a;
+}
+
+.status-box {
+    min-height: 90px;
+    padding: 18px;
+    border-radius: var(--radius-lg);
+    border: 1px dashed rgba(159, 176, 208, 0.25);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width: 1180px) {
+    .app-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 860px) {
+    .main-content,
+    .sidebar {
+        padding: 20px;
+    }
+
+    .hero,
+    .two-columns,
+    .catalog-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .hero {
+        align-items: start;
+    }
+
+    .action-field,
+    .section-heading {
+        align-items: stretch;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 560px) {
+    .section-card,
+    .hero,
+    .ids-panel {
+        padding: 20px;
+    }
+
+    .brand {
+        align-items: flex-start;
+    }
+
+    .brand-mark {
+        width: 50px;
+        height: 50px;
+    }
+}

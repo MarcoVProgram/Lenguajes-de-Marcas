@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestión de Biblioteca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">📚</div>
+            <div>
+            <p class="eyebrow">Actividad A5</p>
+            <h1>Sistema de Biblioteca</h1>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#busqueda" class="nav-link">Búsqueda</a>
+            <a href="#catalogo" class="nav-link">Catálogo</a>
+            <a href="#agregar-libro" class="nav-link">Agregar libro</a>
+            <a href="#prestamo" class="nav-link">Préstamo</a>
+        </nav>
+
+        <div class="ids-panel card">
+            <h2>IDs principales</h2>
+            <ul>
+            <li>#searchForm</li>
+            <li>#searchInput</li>
+            <li>#searchType</li>
+            <li>#catalogList</li>
+            <li>#addBookForm</li>
+            <li>#title</li>
+            <li>#author</li>
+            <li>#category</li>
+            <li>#isbn</li>
+            <li>#loanForm</li>
+            <li>#loanBook</li>
+            <li>#userName</li>
+            <li>#userEmail</li>
+            <li>#userId</li>
+            <li>#statusMessage</li>
+            </ul>
+        </div>
+        </aside>
+
+        <main class="main-content">
+        <section class="hero card">
+            <div>
+            <p class="eyebrow">Base visual para JavaScript</p>
+            <h2>Interfaz lista para conectar lógica</h2>
+            <p class="hero-text">
+                Estructura preparada para búsqueda, inventario, alta de libros y préstamos.
+            </p>
+            </div>
+            <div class="hero-stats">
+            <div class="stat-box">
+                <span class="stat-label">Sección</span>
+                <strong>Catálogo</strong>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Estado</span>
+                <strong>Base lista</strong>
+            </div>
+            </div>
+        </section>
+
+        <section id="busqueda" class="section-grid">
+            <div class="card section-card">
+            <div class="section-heading">
+                <p class="eyebrow">Formulario</p>
+                <h2>Buscar libros</h2>
+            </div>
+
+            <form id="searchForm" class="form-grid">
+                <div class="field full-width">
+                <label for="searchInput">Término de búsqueda</label>
+</html>
