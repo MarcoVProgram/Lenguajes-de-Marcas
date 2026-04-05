@@ -1,3 +1,4 @@
+/*Coleccion de Estilos a llamar*/
 :root {
     --bg: #0f172a;
     --bg-soft: #111827;
@@ -16,17 +17,19 @@
     --radius-sm: 10px;
 }
 
-
+/*Estilo general*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/*Metodo de deslizamiento*/
 html {
     scroll-behavior: smooth;
 }
 
+/*Estilo del cuerpo*/
 body {
     font-family: 'Inter', sans-serif;
     background:
@@ -37,12 +40,14 @@ body {
     min-height: 100vh;
 }
 
+/*Estilo para el cuerpo en general*/
 .app-shell {
     display: grid;
     grid-template-columns: 320px 1fr;
     min-height: 100vh;
 }
 
+/*Estilo barra izquierda*/
 .sidebar {
     position: sticky;
     top: 0;
@@ -53,6 +58,7 @@ body {
     backdrop-filter: blur(18px);
 }
 
+/*Estilo para el texto de introduccion activo y barra de navegacion*/
 .brand,
 .section-heading,
 .hero,
@@ -67,12 +73,14 @@ body {
     margin: 1%;
 }
 
+/*Modificaciones para la marca*/
 .brand {
     align-items: center;
     gap: 1%;
     margin-bottom: 5%;
 }
 
+/*Modificaciones para el simbolo de la marca*/
 .brand-mark {
     width: 58px;
     height: 58px;
@@ -84,24 +92,35 @@ body {
     font-size: 1.6rem;
 }
 
+/*Estilo texto lateral*/
 .eyebrow {
     color: var(--muted);
     font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 6px;
+    margin-left: 2px;
 }
 
+/*Estilo para los encabezados*/
 .brand h1,
 .section-heading h2,
 .hero h2,
 .book-card h3 {
     line-height: 1.1;
+    white-space: pre-line;
 }
 
+/*Estilo para los items de los libros, con un salto de linea entre el contenido*/
+.book-item {
+    white-space: pre-line;
+}
+
+/*Modificaciones para el texto de la marca*/
 .brand h1 {
     font-size: 1.2rem;
 }
 
+/*Navegación lateral*/
 .sidebar-nav {
     flex-direction: column;
     gap: 10px;
@@ -118,6 +137,11 @@ body {
     transition: 0.2s ease;
 }
 
+.nav-link-active {
+    font-weight: bold;
+    color: rgb(191, 191, 255);
+}
+
 .nav-link:hover,
 .nav-link:focus {
     border-color: rgba(96, 165, 250, 0.35);
@@ -125,6 +149,7 @@ body {
     outline: none;
 }
 
+/*Estilo para el contenido principal*/
 .card {
     background: var(--surface);
     border: 1px solid var(--line);
@@ -168,7 +193,11 @@ body {
     color: var(--muted);
 }
 
-.section-grid {
+.section-disabled {
+    display: none;
+}
+
+.section-active {
     display: grid;
     gap: 24px;
 }
@@ -179,6 +208,7 @@ body {
 
 .section-card {
     padding: 28px;
+    margin: 30px;
 }
 
 .section-heading {
@@ -280,6 +310,45 @@ button:hover {
     background: rgba(255, 255, 255, 0.03);
 }
 
+/*Botones*/
+.btn-accion {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.btn-completar {
+  background-color: #22c55e;
+  border: 1px solid #16a34a;
+  color: white;
+}
+ 
+.btn-completar:hover {
+  background-color: #16a34a;
+}   
+/*Libros*/
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #305172;
+    border: 1px solid #1b3353;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+.book-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-2);
+}
+
+.book-item.book-rented span {
+  font-weight: bold;
+  color: var(--danger);
+}
+
+/*Media Queries para adaptabilidad*/
 @media (max-width: 1180px) {
     .app-shell {
         grid-template-columns: 1fr;
@@ -319,7 +388,7 @@ button:hover {
     .action-field,
     .section-heading {
         align-items: stretch;
-        justify-content: start;
+        justify-content: space-evenly;
     }
 }
 
@@ -337,5 +406,10 @@ button:hover {
     .brand-mark {
         width: 50px;
         height: 50px;
+    }
+
+    .section-heading {
+        align-items: stretch;
+        justify-content: space-evenly;
     }
 }

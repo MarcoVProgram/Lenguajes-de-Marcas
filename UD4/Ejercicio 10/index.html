@@ -1,83 +1,129 @@
+<!-- Biblioteca Decroly comienzo del documento-->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistema de Gestión de Biblioteca</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <div class="app-shell">
-        <aside class="sidebar">
-        <div class="brand">
-            <div class="brand-mark">📚</div>
-            <div>
-            <p class="eyebrow">Actividad A5</p>
-            <h1>Sistema de Biblioteca</h1>
+    <head>
+        <!--Titulo, cargado de estilos, y ajuste correcto de la pantalla, incluye caracteres especiales-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema de Gestión de Biblioteca</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!--Encubre todo en el estilo app-shell-->
+        <div class="app-shell">
+
+        <!--Barra lateral de navegación-->
+        <aside class="sidebar">  
+            <!--Presentacion nuestra, mencion de Decroly y Actividad-->          
+            <div class="brand">
+                <div class="brand-mark">📚</div>
+                <div>
+                    <p class="eyebrow">Actividad Nº5</p>
+                    <h1>Biblioteca Decroly</h1>
+                </div> 
             </div>
-        </div>
 
-        <nav class="sidebar-nav">
-            <a href="#busqueda" class="nav-link">Búsqueda</a>
-            <a href="#catalogo" class="nav-link">Catálogo</a>
-            <a href="#agregar-libro" class="nav-link">Agregar libro</a>
-            <a href="#prestamo" class="nav-link">Préstamo</a>
-        </nav>
-
-        <div class="ids-panel card">
-            <h2>IDs principales</h2>
-            <ul>
-            <li>#searchForm</li>
-            <li>#searchInput</li>
-            <li>#searchType</li>
-            <li>#catalogList</li>
-            <li>#addBookForm</li>
-            <li>#title</li>
-            <li>#author</li>
-            <li>#category</li>
-            <li>#isbn</li>
-            <li>#loanForm</li>
-            <li>#loanBook</li>
-            <li>#userName</li>
-            <li>#userEmail</li>
-            <li>#userId</li>
-            <li>#statusMessage</li>
-            </ul>
-        </div>
+            <!--Links a hacer click para seleccionar punto de navegación-->
+            <nav class="sidebar-nav">
+                <a href="#busqueda" class="nav-link">Búsqueda</a>
+                <a href="#catalogo" class="nav-link">Catálogo</a>
+                <a href="#agregar-libro" class="nav-link">Agregar libro</a>
+            </nav>
         </aside>
+        <!--Lo llamamos nav y aside para indicar más visualmente donde se localizarán-->
 
+        <!--Creacion del contenido principal del cuerpo-->
         <main class="main-content">
-        <section class="hero card">
-            <div>
-            <p class="eyebrow">Base visual para JavaScript</p>
-            <h2>Interfaz lista para conectar lógica</h2>
-            <p class="hero-text">
-                Estructura preparada para búsqueda, inventario, alta de libros y préstamos.
-            </p>
-            </div>
-            <div class="hero-stats">
-            <div class="stat-box">
-                <span class="stat-label">Sección</span>
-                <strong>Catálogo</strong>
-            </div>
-            <div class="stat-box">
-                <span class="stat-label">Estado</span>
-                <strong>Base lista</strong>
-            </div>
-            </div>
-        </section>
 
-        <section id="busqueda" class="section-grid">
-            <div class="card section-card">
-            <div class="section-heading">
-                <p class="eyebrow">Formulario</p>
-                <h2>Buscar libros</h2>
-            </div>
+            <!--Presentacion siempre activa-->
+            <section class="hero card">
+                <div>
+                    <p class="eyebrow">Practica de JavaScript</p>
+                    <h2>Biblioteca</h2>
+                    <p class="hero-text">
+                        Un lugar para búsqueda, almacenamiento, y gestión de libros y préstamos.
+                    </p>
+                </div>
+            </section>
 
-            <form id="searchForm" class="form-grid">
-                <div class="field full-width">
-                <label for="searchInput">Término de búsqueda</label>
+            <!--Sección de búsqueda, Activada por defecto-->
+            <section id="busqueda" class="section-active">
+                <div class="card section-card">
+                <div class="section-heading">
+                    <p class="eyebrow">Búsqueda</p>
+                    <h2>Buscar libros</h2>
+                </div>
+
+                <div class="field">
+                    <label for="searchMethod">Buscador</label>
+                    <select id="searchMethod" name="searchMethod">
+                        <option value="">— Selecciona —</option>
+                        <option value="titulo" selected>Título</option><!--Seleccionado por defecto-->
+                        <option value="autor">Autor</option>
+                        <option value="isbn">ISBN</option>
+                        <option value="categoria">Categoría</option>
+                    </select>
+                    <small>Selecciona una opción.</small>
+                </div>
+
+                <form id="searchForm" class="form-grid">
+                    <div class="field full-width">
+                    <input id="searchInput" placeholder="Término de búsqueda">
+                    </input>
+                </form>
+
+                <ul id="searchResults" class="book-list">
+                    <!-- Aquí se mostrarán los resultados de búsqueda -->
+                </ul>
+                
+            </section>
+
+            <!--Muestra del Catalogo, desactivada por defecto-->
+            <section id="catalogo" class="section-disabled"> 
+                <div class="card section-card">
+                <div class="section-heading">
+                    <p class="eyebrow">Catálogo</p>
+                    <h2>Ver libros</h2>
+                </div>
+
+                <ul id="bookList" class="book-list">
+                    <!-- Aquí se mostrarán los libros -->
+                </ul>
+            </section>
+
+            <!--Formulario para agregar libros, desactivada por defecto-->
+            <section id="agregar-libro" class="section-disabled">
+                <div class="card section-card">
+                <div class="section-heading">
+                    <p class="eyebrow">Formulario</p>
+                    <h2>Agregar libro</h2>
+                </div>
+
+                <!--Formulario para agregar libros -->
+                <form id="searchForm" class="form-grid">
+                    <div class="field full-width">
+
+                    <p>Nombre del libro:</p>
+                    <input id="nameInput" placeholder="Nombre del libro, Ej: 'El sol del viento'">
+                    </input>
+
+                    <p>Autor del libro:</p>
+                    <input id="autorInput" placeholder="El nombre de una persona, Ej: 'JJ Abrams'">
+                    </input>
+
+                    <p>ISBN del libro:</p>
+                    <input id="isbnInput" placeholder="Un numero de 13 digitos, Ejemplo: '1234567890123'">
+                    </input>
+
+                    <p>Categoría del libro:</p>
+                    <input id="categoriaInput" placeholder="Inserte una categoría para el libro...">
+                    </input>
+                    <button id="addBookButton" type="submit" value="Agregar libro">Añadir libro</button>
+                </form>
+            </section>
+        </main>
+
+        <!--Script para la funcionalidad de JavaScript-->
+        <script src="app.js"></script>
+    </body>
 </html>
